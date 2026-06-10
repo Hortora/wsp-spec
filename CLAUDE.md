@@ -6,6 +6,20 @@
 
 @/Users/mdproctor/claude/hortora/spec/CLAUDE.md
 
+## What Hortora Is
+
+Federated, governed knowledge garden system — machine-wide library of hard-won technical knowledge (gotchas, techniques, undocumented behaviours). Entries live in `~/.hortora/garden/`. The **forage** skill captures during sessions; **harvest** deduplicates; **garden-engine** (Quarkus) provides RAG search via Qdrant + Ollama.
+
+**Key repos:**
+- `~/claude/hortora/spec/` — this repo: protocol spec, ADRs, design docs
+- `~/claude/hortora/soredium/` — skills (forage, harvest), validators, CI
+- `~/claude/hortora/garden-engine/` — Quarkus retrieval service (phase 2 is the next build)
+- `~/claude/hortora/hortora.github.io/` — public website + blog
+- `~/.hortora/garden/` — live canonical garden (Hortora/garden)
+- `~/claude/casehub/garden/` — CaseHub protocol store (casehubio/garden)
+
+**Immediate work:** garden-engine phase 2 (SPLADE + cross-encoder). Gate cleared 2026-06-10. Open that session in the garden-engine workspace: `~/claude/public/hortora/garden-engine/`.
+
 ## Session Start
 
 Run `add-dir /Users/mdproctor/claude/hortora/spec` and `add-dir /Users/mdproctor/claude/public/hortora/spec` before any other work.
